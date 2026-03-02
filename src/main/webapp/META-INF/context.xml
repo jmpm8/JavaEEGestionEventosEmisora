@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Archivo de configuración de contexto de Tomcat.Define los recursos disponibles para la aplicación web.-->
+
+<Context>
+
+	<!--Definición del DataSource (pool de conexiones).-->
+	<Resource name="jdbc/Festival"
+			  auth="Container"
+			  type="javax.sql.DataSource"
+			  driverClassName="com.mysql.cj.jdbc.Driver"
+			  url="jdbc:mysql://localhost:3306/festivaldb2"
+			  username="root"
+			  password="admin123"
+			  maxTotal="20"
+			  maxIdle="10"
+			  maxWaitMillis="10000"
+			  >
+	</Resource>
+
+</Context>
